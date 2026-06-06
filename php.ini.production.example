@@ -1,0 +1,44 @@
+; PHP production template for sitehamala
+; Copy only the relevant directives into the server php.ini / pool config.
+; Do not apply these values blindly to local development.
+
+[PHP]
+expose_php = Off
+display_errors = Off
+display_startup_errors = Off
+log_errors = On
+error_log = /var/log/php/sitehamala-error.log
+html_errors = Off
+
+memory_limit = 256M
+max_execution_time = 30
+max_input_time = 60
+post_max_size = 16M
+upload_max_filesize = 10M
+max_file_uploads = 20
+
+session.use_strict_mode = 1
+session.use_only_cookies = 1
+session.use_trans_sid = 0
+session.cookie_httponly = 1
+session.cookie_samesite = Lax
+session.cookie_secure = 1
+session.gc_maxlifetime = 1440
+session.sid_length = 48
+
+; Keep session storage writable and outside the web root.
+; session.save_handler = files
+; session.save_path = "/var/lib/php/sessions"
+
+[opcache]
+zend_extension = opcache
+opcache.enable = 1
+opcache.enable_cli = 0
+opcache.memory_consumption = 128
+opcache.interned_strings_buffer = 16
+opcache.max_accelerated_files = 10000
+opcache.max_wasted_percentage = 5
+opcache.validate_timestamps = 0
+opcache.revalidate_freq = 0
+opcache.save_comments = 1
+opcache.fast_shutdown = 1

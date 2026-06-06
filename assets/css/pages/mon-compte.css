@@ -1,0 +1,240 @@
+.account-page {
+  padding-top: 12px;
+  padding-bottom: 48px;
+}
+
+.account-page__head {
+  margin-bottom: 14px;
+}
+
+.account-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 8px;
+  color: rgba(14, 11, 8, 0.72);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.account-back-link:hover {
+  color: rgba(14, 11, 8, 0.92);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.account-grid > *,
+.account-kv__row > *,
+.account-actions > *,
+.account-links > * {
+  min-width: 0;
+}
+
+.account-card {
+  padding: 20px;
+  min-width: 0;
+}
+
+.account-card__head {
+  margin-bottom: 14px;
+}
+
+.account-card__head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.account-grid .account-card:nth-child(1) {
+  grid-column: span 12;
+}
+
+.account-grid .account-card:nth-child(2),
+.account-grid .account-card:nth-child(3) {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-kv {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.account-kv__row {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(14, 11, 8, 0.08);
+}
+
+.account-kv__row:last-child {
+  border-bottom: 0;
+}
+
+.account-kv dt {
+  margin: 0;
+  font-weight: 600;
+  color: rgba(14, 11, 8, 0.72);
+}
+
+.account-kv dd {
+  margin: 0;
+  color: rgba(14, 11, 8, 0.92);
+  overflow-wrap: anywhere;
+}
+
+.account-actions {
+  display: grid;
+  gap: 10px;
+  flex: 1;
+}
+
+.account-action {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(14, 11, 8, 0.1);
+  background: var(--surface, #FFFFFF);
+  color: rgba(14, 11, 8, 0.9);
+  text-decoration: none;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.account-action i {
+  opacity: 0.85;
+}
+
+.account-note {
+  margin: 12px 0 0;
+  color: rgba(14, 11, 8, 0.68);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.account-form-page {
+  padding-top: 10px;
+}
+
+.account-form-card {
+  max-width: 760px;
+}
+
+.profile-form-card {
+  background: var(--surface, #FFFFFF);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(14, 11, 8, 0.08);
+  padding: 22px;
+}
+
+.account-form {
+  display: grid;
+  gap: 12px;
+}
+
+.account-form__row {
+  display: grid;
+  gap: 6px;
+}
+
+.account-form__row label {
+  font-weight: 600;
+  color: rgba(14, 11, 8, 0.8);
+}
+
+.account-form .form-input {
+  width: 100%;
+  border: 1px solid rgba(14, 11, 8, 0.12);
+  border-radius: 10px;
+  padding: 11px 12px;
+  background: #fff;
+  color: rgba(14, 11, 8, 0.92);
+}
+
+.account-form .form-input:focus {
+  outline: none;
+  border-color: rgba(118, 185, 87, 0.75);
+  box-shadow: 0 0 0 3px rgba(118, 185, 87, 0.16);
+}
+
+.account-form__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.account-links {
+  display: grid;
+  gap: 10px;
+  flex: 1;
+}
+
+.account-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(14, 11, 8, 0.1);
+  color: rgba(14, 11, 8, 0.9);
+  background: var(--surface, #FFFFFF);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow-wrap: anywhere;
+}
+
+.account-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(14, 11, 8, 0.08);
+}
+
+@media (max-width: 900px) {
+  .account-grid .account-card:nth-child(2),
+  .account-grid .account-card:nth-child(3) {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 600px) {
+  .account-page {
+    padding-top: 8px;
+    padding-bottom: 36px;
+  }
+
+  .account-grid {
+    gap: 12px;
+  }
+
+  .account-card {
+    padding: 16px;
+  }
+
+  .account-kv__row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .account-action,
+  .account-link {
+    min-height: 44px;
+    padding: 10px 11px;
+  }
+
+  .account-form__actions .btn {
+    width: 100%;
+  }
+}

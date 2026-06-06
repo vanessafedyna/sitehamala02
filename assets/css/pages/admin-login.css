@@ -1,0 +1,55 @@
+.page-admin-login #main {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+}
+
+.page-admin-login #main > section {
+  width: 100%;
+  padding: 32px 0;
+}
+
+.page-admin-login #main .container {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page-admin-login #main h1 {
+  margin-bottom: 10px;
+}
+
+.page-admin-login #main .section-subtitle {
+  max-width: 640px;
+  margin: 0 auto 18px;
+}
+
+.page-admin-login #main .feature-card,
+.page-admin-login #main .auth-card {
+  width: min(520px, 100%);
+}
+
+.page-admin-login #main .auth-card {
+  margin-top: 10px;
+}
+
+.page-admin-login #main .auth-form {
+  text-align: left;
+}
+
+.page-admin-login #main .auth-actions {
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .page-admin-login #main {
+    min-height: auto;
+    display: block;
+  }
+
+  .page-admin-login #main > section {
+    padding: 24px 0;
+  }
+}

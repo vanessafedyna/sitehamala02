@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Zones non indexables / techniques
+Disallow: /admin/
+Disallow: /public/api/
+Disallow: /app/
+Disallow: /includes/
+Disallow: /scripts/
+Disallow: /cron/
+
+# Pages utilitaires / privees
+Disallow: /pages/recherche.php
+Disallow: /pages/commande.php
+Disallow: /pages/commande_submit.php
+Disallow: /pages/cart_add.php
+Disallow: /pages/order_success.php
+Disallow: /pages/mes-commandes.php
+Disallow: /pages/supprimer-compte.php
+
+# Sitemap
+Sitemap: /sitemap.xml

@@ -1,0 +1,26 @@
+.env
+.env.*
+!.env.example
+!.env.production.example
+app/logs/app.log
+app/logs/*.log
+*.log
+*.zip
+
+# Editor settings (local)
+/.vscode/
+
+# Uploads (keep directory in repo)
+/uploads/products/*
+!/uploads/products/.gitkeep
+/uploads/categories/*
+!/uploads/categories/.gitkeep
+
+# Debug helpers (do not ship / do not commit)
+/test_db.php
+/test_*.php
+/debug_*.php
+tree.txt
+
+# Local browser temp/cache folders
+/_edge_tmp/

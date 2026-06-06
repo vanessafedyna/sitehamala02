@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Hardening basique: pas de listing de dossiers.
+  Options -Indexes
+
+  # Ne jamais exposer les fichiers sensibles du dépôt.
+  RewriteRule "(^|/)\.(?!well-known/)" - [F,L]
+  RewriteRule "^(?:app|cron|database|includes|lib|scripts)/" - [F,L,NC]
+  RewriteRule "(?:^|/)(?:README\.md|tree\.txt|.*\.sql|.*\.log|\.env(?:\..*)?)$" - [F,L,NC]
+
+  # Expose the dynamic sitemap on a standard SEO URL.
+  RewriteRule ^sitemap\.xml$ sitemap.php [L]
+</IfModule>

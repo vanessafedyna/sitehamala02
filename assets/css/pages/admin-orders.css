@@ -1,0 +1,283 @@
+  .admin-orders-page {
+    --orders-sticky-top: 12px;
+  }
+  .admin-orders-page .admin-alert {
+    margin-bottom: 14px;
+  }
+  .admin-orders-page .admin-alert ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+  }
+  .admin-orders-page .feature-card,
+  .admin-orders-page .admin-mobile-section {
+    background: var(--admin-surface);
+    border: 1px solid var(--admin-border);
+    border-radius: 18px;
+    box-shadow: var(--admin-shadow-sm);
+  }
+  .admin-orders-page .feature-card {
+    padding: 18px;
+  }
+  .admin-orders-page .admin-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .admin-orders-page .admin-toolbar__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 1 320px;
+    min-width: 0;
+  }
+  .admin-orders-page .admin-input {
+    min-height: 46px;
+    min-width: min(220px, 100%);
+    border: 1px solid var(--admin-border);
+    border-radius: 14px;
+    background: var(--admin-surface);
+    box-shadow: none;
+  }
+  .admin-orders-page .btn {
+    transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
+  }
+  .admin-orders-stack {
+    display: grid;
+    gap: 16px;
+  }
+  .admin-orders-reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 260ms ease, transform 260ms ease;
+  }
+  .admin-orders-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .admin-orders-viewbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .admin-orders-viewbar__intro strong {
+    display: block;
+    color: var(--admin-ink);
+    font-size: 1rem;
+  }
+  .admin-orders-viewbar__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .admin-orders-kpis {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .admin-orders-kpis .admin-kpi-card {
+    min-height: 126px;
+  }
+  .admin-orders-filters .admin-filterbar__group {
+    align-items: stretch;
+  }
+  .admin-orders-filters .admin-field,
+  .admin-orders-filters .admin-select {
+    min-width: min(220px, 100%);
+  }
+  .admin-orders-filters .admin-filterbar__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .admin-orders-bulkbar {
+    position: sticky;
+    top: var(--orders-sticky-top);
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    padding: 12px 14px;
+    border: 1px solid var(--admin-accent-soft-border);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: var(--admin-shadow-sm);
+    backdrop-filter: blur(8px);
+  }
+  .admin-orders-bulkbar__meta,
+  .admin-orders-bulkbar__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .admin-orders-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--admin-text);
+    font-weight: 600;
+  }
+  .admin-orders-check {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--admin-accent);
+  }
+  .admin-orders-table-shell {
+    overflow: hidden;
+  }
+  .admin-orders-table-shell .admin-table {
+    min-width: 1040px;
+  }
+  .admin-orders-table-shell thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #f7faf8;
+  }
+  .admin-orders-table-shell tbody tr {
+    transition: background-color 140ms ease;
+  }
+  .admin-orders-table-shell tbody tr:hover {
+    background: rgba(31, 122, 79, 0.035);
+  }
+  .admin-orders-table-shell tbody tr.is-selected {
+    background: rgba(31, 122, 79, 0.07);
+  }
+  .admin-orders-table-shell td,
+  .admin-orders-table-shell th {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .admin-order-number strong,
+  .admin-orders-customer strong {
+    color: var(--admin-ink);
+  }
+  .admin-order-date,
+  .admin-order-meta {
+    color: var(--admin-text-muted);
+  }
+  .admin-order-status {
+    display: flex;
+    align-items: center;
+  }
+  .admin-order-quick {
+    display: grid;
+    gap: 8px;
+    justify-items: start;
+  }
+  .admin-order-quick__label {
+    font-size: 0.76rem;
+    color: var(--admin-text-muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .admin-order-quick__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .admin-order-quick__actions form {
+    margin: 0;
+  }
+  .admin-orders-mobile-card {
+    border: 1px solid var(--admin-border);
+    border-radius: 18px;
+    background: var(--admin-surface);
+    box-shadow: var(--admin-shadow-sm);
+  }
+  .admin-orders-mobile-card .admin-mobile-card__header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .admin-orders-mobile-card .admin-mobile-card__actions {
+    gap: 12px;
+  }
+  .admin-orders-mobile-card .admin-mobile-check {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--admin-text);
+    font-weight: 600;
+  }
+  .admin-orders-mobile-card .admin-order-quick__actions {
+    width: 100%;
+  }
+  .admin-orders-mobile-card .admin-order-quick__actions form,
+  .admin-orders-mobile-card .admin-order-quick__actions a,
+  .admin-orders-mobile-card .admin-order-quick__actions button {
+    width: 100%;
+  }
+  .admin-orders-mobile-card .admin-order-quick__actions .admin-btn {
+    justify-content: center;
+  }
+  .admin-orders-mobile-list {
+    opacity: 1;
+    transform: none;
+  }
+  @media (max-width: 1024px) {
+    .admin-orders-kpis {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 900px) {
+    .admin-orders-kpis {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .admin-orders-bulkbar {
+      top: 0;
+      align-items: stretch;
+    }
+    .admin-orders-bulkbar__actions {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .admin-order-quick {
+      justify-items: stretch;
+    }
+    .admin-order-quick__actions {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+    }
+    .admin-order-quick__actions form,
+    .admin-order-quick__actions a,
+    .admin-order-quick__actions button {
+      width: 100%;
+    }
+    .admin-order-quick__actions .admin-btn {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 820px) {
+    .admin-orders-kpis {
+      grid-template-columns: 1fr;
+    }
+    .admin-orders-bulkbar__actions {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 640px) {
+    .admin-orders-page {
+      --orders-sticky-top: 0;
+    }
+    .admin-orders-bulkbar {
+      padding: 10px 12px;
+      border-radius: 16px;
+    }
+    .admin-orders-viewbar,
+    .admin-orders-viewbar__actions,
+    .admin-orders-filters .admin-filterbar__actions {
+      width: 100%;
+    }
+  }

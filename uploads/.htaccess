@@ -1,0 +1,6 @@
+Options -Indexes
+
+# Never execute scripts from uploads
+<FilesMatch "\.(php[0-9]?|phtml|phar|pht|jsp|asp|aspx|cgi|pl|py|sh|bat|cmd|exe|com)$">
+  Require all denied
+</FilesMatch>

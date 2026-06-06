@@ -1,0 +1,16 @@
+{
+    "script": "cron/worker_notifications.php",
+    "hostname": "LAPTOP-KA0H12OP",
+    "pid": 852,
+    "updated_at": "2026-05-04T00:47:59+00:00",
+    "status": "ok",
+    "started_at": "2026-05-04T00:47:59+00:00",
+    "finished_at": "2026-05-04T00:47:59+00:00",
+    "dry_run": true,
+    "limit": 1,
+    "claimed_jobs": 1,
+    "processed_jobs": 1,
+    "sent_jobs": 0,
+    "failed_jobs": 0,
+    "invalid_jobs": 0
+}
