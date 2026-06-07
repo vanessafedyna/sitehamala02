@@ -55,3 +55,4 @@ try {
   admin_flash_set('categories', 'error', 'Impossible de mettre à jour la catégorie.');
   redirect($returnTo);
 }
+

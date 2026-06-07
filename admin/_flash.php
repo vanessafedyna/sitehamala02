@@ -48,3 +48,4 @@ function admin_flash_get(string $key): ?array
 
   return array('type' => $type, 'message' => $message);
 }
+

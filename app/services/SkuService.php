@@ -15,3 +15,4 @@ final class SkuService
     return (bool) preg_match('/^[A-Z0-9]{2,8}-[A-Z0-9]{3,10}$/', strtoupper($sku));
   }
 }
+
