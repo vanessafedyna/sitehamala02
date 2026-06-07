@@ -8,4 +8,3 @@ declare(strict_types=1);
 </div>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
-

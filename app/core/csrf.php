@@ -27,3 +27,4 @@ function csrf_field(): string
   return '<input type="hidden" name="_csrf" value="' . e(csrf_token()) . '">';
 }
 
+

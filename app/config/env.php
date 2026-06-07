@@ -57,4 +57,3 @@ function env_load(?string $filePath = null): void
     $_ENV[$key] = $value;
   }
 }
-
